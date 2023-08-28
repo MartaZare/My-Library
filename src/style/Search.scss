@@ -1,0 +1,36 @@
+@import "../style/Variables.scss";
+
+.search {
+  width: 80%;
+
+  .search-result {
+    color: $secondary-text-color;
+    position: relative;
+    width: 100%;
+    margin-top: -17px;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    border: solid 4px $secondary-color;
+    background-color: $main-color;
+    z-index: +1;
+  }
+
+  input {
+    width: 100%;
+    border-radius: 10px;
+    margin-left: 0px;
+  }
+}
+
+.filter {
+  border-radius: 10px;
+  min-width: 210px;
+  width: 20%;
+  color: $secondary-text-color;
+}
+
+@media (min-width: 600px) {
+  .search {
+    width: 60%;
+  }
+}

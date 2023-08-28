@@ -1,0 +1,42 @@
+@import "./Variables.scss";
+
+.library {
+  @include flex-column-center;
+  padding-bottom: 5%;
+}
+
+.book-shelf {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 50px;
+  margin-bottom: 0px;
+  gap: 30px;
+  max-width: 1300px;
+
+  .filter {
+    align-self: flex-end;
+    margin-right: 1px;
+  }
+}
+
+.book {
+  @include book;
+
+  .book-content {
+    @include flex-column-center;
+    gap: 24px;
+  }
+}
+
+@media (min-width: 800px) {
+  .book-shelf {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .book-shelf {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

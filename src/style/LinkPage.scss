@@ -1,0 +1,26 @@
+@import "./Variables.scss";
+
+.all-pages {
+  @include flex-column-center;
+  width: 100%;
+}
+
+.all-pages-links {
+  @include flex-column-center;
+  gap: 16px;
+  width: 100%;
+}
+
+.page-link {
+  @include list-item;
+  @include flex-row-center;
+  width: 80%;
+  background-color: white;
+  font-size: 20px;
+}
+
+@media (min-width: 600px) {
+  .page-link {
+    width: 60%;
+  }
+}

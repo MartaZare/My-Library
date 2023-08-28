@@ -1,0 +1,21 @@
+td,
+th {
+  border: 1px solid;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+}
+
+th,
+td {
+  padding: 7px;
+}
+
+.table-name {
+  border: none;
+  font-size: 24px;
+}/*# sourceMappingURL=Table.css.map */

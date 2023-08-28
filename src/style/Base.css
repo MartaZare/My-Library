@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+html {
+  height: 100vh;
+  background: #ffffff;
+  font-family: "Mukta", sans-serif;
+  color: #ffffff;
+  background-image: url("..//..//public/img/library.jpeg");
+}
+
+#root h1 {
+  margin-top: 80px;
+}
+#root .success-message,
+#root .danger-message,
+#root .page {
+  margin-top: 100px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+  margin-top: 10px;
+  color: #e4b77d;
+}
+
+a {
+  color: #535454;
+}
+
+.btn-link,
+button {
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  margin: 10px;
+  padding: 5px;
+  font-family: "Mukta", sans-serif;
+  font-size: 16px;
+  border-radius: 20px;
+  background-color: #416d80;
+  border: solid 4px #416d80;
+  color: #ffffff;
+}
+
+button:hover,
+.btn-link:hover {
+  color: #ffffff;
+  border: solid 4px #dda153;
+  background-color: #dda153;
+}
+
+.danger-button:hover {
+  background-color: #ff2147;
+  border: solid 4px #ff2147;
+  color: white;
+}/*# sourceMappingURL=Base.css.map */

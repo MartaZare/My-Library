@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+$title-font: "Poppins", sans-serif;
+$main-font: "Mukta", sans-serif;
+
+$main-text-color: #ffffff;
+$secondary-text-color: #535454;
+$accent-text-color: #e4b77d;
+$accent-color: #416d80;
+$main-color: #ffffff;
+$secondary-color: #dda153;
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-row-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin button {
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  margin: 10px;
+  padding: 5px;
+  font-family: $main-font;
+  font-size: 16px;
+  border-radius: 20px;
+  background-color: $accent-color;
+  border: solid 4px $accent-color;
+  color: $main-text-color;
+}
+
+@mixin button-on-hover {
+  color: $main-text-color;
+  border: solid 4px $secondary-color;
+  background-color: $secondary-color;
+}
+
+@mixin input {
+  margin: 10px;
+  padding: 8px;
+  font-size: 16px;
+  color: $secondary-text-color;
+  border-radius: 20px;
+  border: solid 4px $secondary-color;
+}
+
+@mixin book {
+  @include flex-row-center;
+  text-align: center;
+  width: 350px;
+  height: 450px;
+  padding: 30px;
+  max-width: 100%;
+  background-color: $accent-text-color;
+  border-radius: 10px;
+  border: solid 5px $main-color;
+  font-family: $title-font;
+
+  a {
+    font-family: $title-font;
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 45px;
+    line-height: 50px;
+    color: $main-text-color;
+  }
+
+  h3 {
+    font-size: 25px;
+    line-height: 30px;
+    color: $main-text-color;
+  }
+}
+
+@mixin list-item {
+  text-align: center;
+  width: 600px;
+  height: 50px;
+  padding: 30px;
+  background-color: $main-color;
+  border-radius: 10px;
+  border: solid 5px $secondary-color;
+  font-family: $secondary-text-color;
+
+  h2,
+  h3 {
+    color: $main-text-color;
+  }
+}

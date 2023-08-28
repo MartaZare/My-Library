@@ -1,0 +1,53 @@
+@import "./Variables.scss";
+
+html {
+  height: 100vh;
+  background: $main-color;
+  font-family: $main-font;
+  color: $main-text-color;
+  background-image: url("..//..//public/img/library.jpeg");
+}
+
+#root {
+  h1 {
+    margin-top: 80px;
+  }
+  .success-message,
+  .danger-message,
+  .page {
+    margin-top: 100px;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: $title-font;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+  margin-top: 10px;
+  color: $accent-text-color;
+}
+
+a {
+  color: $secondary-text-color;
+}
+
+.btn-link,
+button {
+  @include button;
+}
+
+button:hover,
+.btn-link:hover {
+  @include button-on-hover;
+}
+
+.danger-button:hover {
+  background-color: #ff2147;
+  border: solid 4px #ff2147;
+  color: white;
+}
